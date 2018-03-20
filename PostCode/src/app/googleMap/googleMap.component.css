@@ -1,0 +1,18 @@
+agm-map {
+    height: 600px;
+    
+  }
+  .x-card {
+    max-width: inherit;
+    height: fit-content;
+  }
+  
+  .x-radio-group {
+    display: inline-flex;
+    flex-direction: row;
+  }
+  
+  .x-radio-button {
+    margin: 5px;
+  }
+  

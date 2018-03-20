@@ -1,0 +1,15 @@
+<mat-card class="x-card">
+    <mat-card-header>
+        <div mat-card-avatar class="x-header-image"></div>
+        <mat-card-title>Map</mat-card-title>
+    </mat-card-header>
+    <mat-card-actions>
+            <mat-radio-group class="x-radio-group" [(ngModel)]="zoom">
+                <mat-radio-button class="x-radio-button" *ngFor="let zoomArray of zoomsArray" [value]="zoomArray">{{zoomArray}}</mat-radio-button>
+            </mat-radio-group>
+        </mat-card-actions>
+    </mat-card>
+    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+    </agm-map>
+    

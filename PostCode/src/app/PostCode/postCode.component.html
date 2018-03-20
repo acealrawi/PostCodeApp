@@ -1,0 +1,12 @@
+<form class="x-form" (ngSubmit)="onSubmit()" #form="ngForm" >
+
+    <mat-form-field class="x-full-width">
+        <input matInput [(ngModel)]="postcode" name="postcode" #postCode maxlength="6" placeholder="Post Code" required>
+        <mat-hint align="end">{{postCode.value.length}} / 6</mat-hint>
+    </mat-form-field>
+    <mat-form-field class="x-full-width">
+        <input matInput [(ngModel)]="houseNumber" name="houseNumber" placeholder="Huis nummer" required>
+    </mat-form-field>
+
+    <button  mat-raised-button color="primary" type="submit" [disabled]="!form.form.valid">Submit</button>
+</form>

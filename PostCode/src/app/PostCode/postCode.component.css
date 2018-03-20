@@ -1,0 +1,9 @@
+.x-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .x-full-width {
+    width: 100%;
+  }
