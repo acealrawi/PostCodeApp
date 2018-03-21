@@ -38,8 +38,7 @@ import { GoogleMapComponent } from './googleMap/googleMap.component';
       apiKey: 'AIzaSyBM9rH88vRhSdHYBnwEBcppAT_NRUZcMA0'
     }),
     RouterModule.forRoot([
-        { path: '', redirectTo: 'home', pathMatch: 'full' },
-        { path: 'home', component: HomeComponent },
+        { path: '', component: HomeComponent },
         { path: '**', redirectTo: 'home' }
     ])
   ],
